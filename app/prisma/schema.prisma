@@ -10,12 +10,13 @@ datasource db {
 }
 
 model kunde {
-  id         Int      @id @default(autoincrement())
-  vorname    String
-  nachname   String
-  email      String   @unique
-  telefon    String?
-  adresse    String?
-  erstellt   DateTime @default(now())
+  id          Int      @id @default(autoincrement())
+  vorname     String
+  nachname    String
+  email       String   @unique
+  telefon     String?
+  adresse     String?
+  sonstiges   String?
+  erstellt    DateTime @default(now())
   aktualisiert DateTime @updatedAt
 }

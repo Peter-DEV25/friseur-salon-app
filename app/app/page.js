@@ -1,16 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
       Friseur App
-      <form className="flex flex-col gap-4">
-        <input type="text" placeholder="Name" className="border-2 border-gray-300 rounded-md p-2" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Phone" />
-        <input type="text" placeholder="Message" />
-        <button className="bg-blue-500 text-white p-2 rounded-md w-max"  type="submit">Send</button>
-      </form>
+      <Link className="text-decoration text-purple-500" href="/kunde_anlegen">Kunde anlegen</Link>
+      <Link className="text-decoration text-purple-500" href="/kunde_anlegen">Kunde anzeigen</Link>
     </div>
   );
 }
