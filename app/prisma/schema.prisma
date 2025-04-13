@@ -18,5 +18,5 @@ model kunde {
   adresse     String?
   sonstiges   String?
   erstellt    DateTime @default(now())
-  aktualisiert DateTime @updatedAt
+  aktualisiert DateTime @updatedAt @default(now())
 }
